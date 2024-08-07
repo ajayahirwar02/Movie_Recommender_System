@@ -2,6 +2,12 @@ import streamlit as st
 import pickle
 import pandas as pd
 
+#set page configuration
+st.set_page_config(
+    page_title="Movie Recommendation System",
+    page_icon="logo.png"  
+)
+
 def recommend(movie):
     movie_index = movies[movies['title'] == movie].index[0]
     distances=similarity[movie_index]
@@ -32,3 +38,30 @@ if st.button('Recommend'):
 
     for i in recommendation:
         st.write(i)
+
+#design footer
+st.markdown(
+    """
+    <style>
+    .footer { 
+        #link{
+        text-decoration: none;
+        }
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        background-color: #f1f1f1;
+        color: black;
+        text-align: center;
+        padding: 10px;
+        font-size: 14px;d
+        box-shadow: 0px -1px 5px rgba(0, 0, 0, 0.1);
+    }
+    </style>
+    <div class="footer">
+        <p> <a id ="link" href = "https://www.linkedin.com/in/ajayahirwar02/">Developed by Ajay </a></p>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
