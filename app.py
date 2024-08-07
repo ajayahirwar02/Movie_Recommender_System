@@ -59,7 +59,7 @@ st.markdown(
     }
     </style>
     <div class="footer">
-        <p> <a id ="link" href = "https://www.linkedin.com/in/ajayahirwar02/">Developed by Ajay </a></p>
+        <p> <a id ="link" href = "https://www.linkedin.com/in/ajayahirwar02/">Developed by Ajay Ahirwar</a></p>
     </div>
     """,
     unsafe_allow_html=True
