@@ -4,7 +4,7 @@ import pandas as pd
 
 #set page configuration
 st.set_page_config(
-    page_title="Movie Recommendation System" 
+    page_title="Movie Recommender System" 
 )
 
 def recommend(movie):
